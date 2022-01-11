@@ -49,9 +49,10 @@ body {
 }
 
 .card-wrapper .card-body h1 {
-  font-size: 23px;
+  font-size: 22px;
   color: var(--white);
   margin-bottom: 34px;
+  font-weight: 400;
 }
 
 .card-wrapper .card-body p {
@@ -121,4 +122,56 @@ body {
 
 .card-wrapper .card-footer p {
   color: var(--white);
+}
+
+@media (max-width: 576px) {
+  .card-wrapper {
+    width: 250px;
+  }
+  .card-wrapper .card-top {
+    margin-bottom: 15px;
+  }
+
+  .card-wrapper .card-top .img-wrapper img {
+    width: 200px;
+  }
+
+  .card-wrapper .card-body {
+  }
+
+  .card-wrapper .card-body h1 {
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 15px;
+    font-weight: 400;
+  }
+
+  .card-wrapper .card-body .body-bottom .body-bottom__left .icon {
+    margin-right: 4px;
+    padding-top: 4px;
+  }
+
+  .card-wrapper .card-body .body-bottom .body-bottom__left p {
+    font-size: 15px;
+    color: var(--cyan);
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+
+  .card-wrapper .card-body .body-bottom .body-bottom__right .icon {
+    margin-right: 3px;
+    padding-top: 3px;
+  }
+
+  .card-wrapper .card-body .body-bottom .body-bottom__right p {
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .card-wrapper .hr {
+    margin-bottom: 15px;
+  }
+
+  .card-wrapper .card-footer {
+    font-size: 15px;
+  }
 }
