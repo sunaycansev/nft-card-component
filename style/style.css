@@ -38,11 +38,51 @@ body {
 }
 
 .card-wrapper .card-top .img-wrapper {
+  position: relative;
+  background-image: url(../images/image-equilibrium.jpg);
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.card-wrapper .card-top .img-wrapper img {
-  width: 300px;
+.card-wrapper .card-top .img-wrapper .view-icon {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/icon-view.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: -50px;
+  margin-top: -5px;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in;
+}
+
+.card-wrapper .card-top .img-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+  background-color: var(--cyan);
   border-radius: 10px;
+}
+
+.card-wrapper .card-top .img-wrapper:hover .overlay {
+  cursor: pointer;
+  opacity: 0.4;
+}
+.card-wrapper .card-top .img-wrapper:hover .view-icon {
+  opacity: 1;
 }
 
 .card-wrapper .card-body {
@@ -144,9 +184,14 @@ body {
     margin-bottom: 15px;
   }
 
-  .card-wrapper .card-top .img-wrapper img {
+  .card-wrapper .card-top .img-wrapper {
     width: 200px;
+    height: 200px;
   }
+  /*.card-wrapper .card-top .img-wrapper .overlay {*/
+  /*  width: 200px;*/
+  /*  height: 200px;*/
+  /*}*/
 
   .card-wrapper .card-body {
   }
