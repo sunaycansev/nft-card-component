@@ -18,9 +18,107 @@
 body {
   font-family: "Outfit", sans-serif;
   background-color: var(--very-dark-blue-body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  height: 100vh;
 }
 
 .card-wrapper {
   width: 350px;
-  border: 1px solid var(--white);
+  background-color: var(--very-dark-blue-card-bg);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 40px 20px 20px #0c1729;
+}
+
+.card-wrapper .card-top {
+  margin-bottom: 25px;
+}
+
+.card-wrapper .card-top .img-wrapper {
+}
+
+.card-wrapper .card-top .img-wrapper img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.card-wrapper .card-body {
+}
+
+.card-wrapper .card-body h1 {
+  font-size: 23px;
+  color: var(--white);
+  margin-bottom: 34px;
+}
+
+.card-wrapper .card-body p {
+  color: var(--soft-blue);
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+
+.card-wrapper .card-body .body-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-wrapper .card-body .body-bottom .body-bottom__left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-wrapper .card-body .body-bottom .body-bottom__left .icon {
+  margin-right: 8px;
+  padding-top: 4px;
+}
+
+.card-wrapper .card-body .body-bottom .body-bottom__left p {
+  font-size: 17px;
+  color: var(--cyan);
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.card-wrapper .card-body .body-bottom .body-bottom__right {
+  display: flex;
+  justify-content: center;
+}
+
+.card-wrapper .card-body .body-bottom .body-bottom__right .icon {
+  margin-right: 5px;
+  padding-top: 3px;
+}
+
+.card-wrapper .card-body .body-bottom .body-bottom__right p {
+  font-weight: 400;
+}
+
+.card-wrapper .hr {
+  border-top: 1px solid var(--white);
+  margin-bottom: 25px;
+  opacity: 0.2;
+}
+.card-wrapper .card-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+}
+
+.card-wrapper .card-footer img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.card-wrapper .card-footer span {
+  color: var(--soft-blue);
+  margin-right: 3px;
+}
+
+.card-wrapper .card-footer p {
+  color: var(--white);
 }
