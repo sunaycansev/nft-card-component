@@ -34,7 +34,7 @@ body {
 }
 
 .card-wrapper .card-top {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .card-wrapper .card-top .img-wrapper {
@@ -51,15 +51,21 @@ body {
 .card-wrapper .card-body h1 {
   font-size: 22px;
   color: var(--white);
-  margin-bottom: 34px;
+  margin-bottom: 25px;
   font-weight: 400;
+  transition: all 0.8s ease;
+}
+
+.card-wrapper .card-body h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
 }
 
 .card-wrapper .card-body p {
   color: var(--soft-blue);
   font-weight: 300;
   line-height: 26px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .card-wrapper .card-body .body-bottom {
@@ -100,7 +106,7 @@ body {
 
 .card-wrapper .hr {
   border-top: 1px solid var(--white);
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   opacity: 0.2;
 }
 .card-wrapper .card-footer {
@@ -122,6 +128,12 @@ body {
 
 .card-wrapper .card-footer p {
   color: var(--white);
+  transition: all 0.8s ease;
+}
+
+.card-wrapper .card-footer p:hover {
+  color: var(--cyan);
+  cursor: pointer;
 }
 
 @media (max-width: 576px) {
